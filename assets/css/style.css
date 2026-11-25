@@ -1,0 +1,42 @@
+:root {
+    --cine: #1b1f3b;
+    --cine-2: #2b2f5c;
+}
+body {
+    background: #f4f5fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main { flex: 1; }
+.bg-cine { background: linear-gradient(90deg, var(--cine), var(--cine-2)); }
+.bg-orange { background-color: #fd7e14 !important; color: #fff; }
+
+.hero {
+    background: linear-gradient(135deg, var(--cine), #4b2a6b);
+    color: #fff;
+    border-radius: 1rem;
+}
+.card-stat { border: 0; border-radius: .9rem; transition: transform .15s; }
+.card-stat:hover { transform: translateY(-3px); }
+.card-stat .icone { font-size: 2.2rem; opacity: .85; }
+
+.table thead th { white-space: nowrap; font-size: .85rem; text-transform: uppercase; color: #6c757d; }
+.table td { vertical-align: middle; }
+.acoes { white-space: nowrap; width: 1%; }
+
+.lista-atores {
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    padding: .5rem .75rem;
+    background: #fff;
+}
+.card-ator { border: 0; border-radius: .8rem; }
+.card-ator .avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--cine-2); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 700;
+}
+mark { padding: 0 .1em; background: #ffe58a; }
